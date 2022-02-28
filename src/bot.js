@@ -36,7 +36,7 @@ client.on('message', (message) =>{
         const CMD_NAME = message.content.substring(PREFIX.length);
         console.log(CMD_NAME);
     }
-    if(message.content === '$quote')
+    if(message.content === '$quote' || message.content === '$ quote')
     {
         if(getRandomInt(3) === 0 || getRandomInt(3) === 1)
         {
