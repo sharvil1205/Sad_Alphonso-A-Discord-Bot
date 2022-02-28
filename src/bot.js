@@ -1,5 +1,6 @@
 var quotes = require("./quotes");
 var quotes1 = require("./quotes1");
+var jokes = require("./jokes");
 
 require("dotenv").config();
 
@@ -46,6 +47,10 @@ client.on('message', (message) =>{
         {
             message.channel.send(quotes1[getRandomInt(quotes1.length)]);
         }
+    }
+    if(message.content === '$joke' || message.content === '$ joke')
+    {
+        message.channel.send(jokes[getRandomInt(jokes.length)]);
     }
 });
 
