@@ -41,7 +41,7 @@ client.on('message', (message) =>{
     {
         if(getRandomInt(3) === 0 || getRandomInt(3) === 1)
         {
-            message.channel.send(quotes[getRandomInt(quotes.length)]);
+            message.channel.send(quotes[getRandomInt(quotes.length)]); // Post a quote
         }
         else
         {
@@ -50,7 +50,7 @@ client.on('message', (message) =>{
     }
     if(message.content === '$joke' || message.content === '$ joke')
     {
-        message.channel.send(jokes[getRandomInt(jokes.length)]);
+        message.channel.send(jokes[getRandomInt(jokes.length)]);      // Post a joke
     }
 });
 
